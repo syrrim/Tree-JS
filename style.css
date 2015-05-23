@@ -19,7 +19,7 @@ a{
     text-decoration: none;
     font-weight: 900;
 }
-table, ol, img, .thumbcaption{
+table, ol, img, ul, .thumbcaption, .mw-editsection, #toc, #See_also, #Notes, #References, #External_links{
     display: none;
 }
 .title{
