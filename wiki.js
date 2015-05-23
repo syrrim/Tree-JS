@@ -2,7 +2,8 @@ function format(html){
     var fake = document.createElement("div")
     fake.innerHTML = html;
     [].map.call(fake.getElementsByTagName("a"), function(elem){
-        elem.href = "http://en.wikipedia.org"+elem.getAttribute("href")});
+        elem.href = "http://en.wikipedia.org"+elem.getAttribute("href")
+        elem.target = "_blank"});
     return fake.innerHTML.replace(/\[[^\]]*\]/, "");
 }
 function wikireq(pages){

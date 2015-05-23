@@ -1,6 +1,3 @@
-var Request = function(page){
-    
-}
 
 var items = {
     name: "Earth",
@@ -11,16 +8,19 @@ var items = {
         {
             name: "Hadean",
             color: "#cabf72",
-            children: []
             },
         {
-            name: "Archeon",
+            name: "Archean",
             color: "#faca85",
-            children: []
+            children: [
+                {name:"Eoarchean", color:"#b6a6a0"},
+                {name:"Paleoarchean", color:"#a9a693"},
+                {name:"Mesoarchean", color:"#7d8991"},
+                {name: "Neoarchean", color:"#607363"}]
             },
         {
             name: "Proterozoic",
-            color: "#68a460",
+            color: "#84b791",
             children: [
                 {
                     name: "Paleoproterozoic",
@@ -29,22 +29,18 @@ var items = {
                         {
                             name: "Siderian",
                             color: "",
-                            children: [],
                             },
                         {
                             name: "Rhyacian",
                             color: "",
-                            children: [],
                             },
                         {
                             name: "Orosirian",
                             color: "",
-                            children: [],
                             },
                         {
                             name: "Statherian",
                             color: "",
-                            children: [],
                             },
                     ]
                     },
@@ -94,7 +90,7 @@ var items = {
             },
         {
             name: "Phanerozoic",
-            color: "#a5855e",
+            color: "#9dc46b",
             children: [
                 {
                     name: "Paleozoic",
